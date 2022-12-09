@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+    <head>
+        <title>Shopping Cart | Asg 5 | Amory Gao</title>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Return to Assignment 5</a></li>
+            </ul>
+        </div>
+        <div class="header">
+            <h1>Shopping Cart Application</h1>
+        </div>
+        <div class="main">
+            <h3>BLACKPINK - BORN PINK Tour</h3>
+            <p>November 15, 2022</p>
+            <p>Prudential Center</p>
+            <p>Quantity <input type="number" id="blackpink" min="0">
+                Price <input type="number" id="blackpink-price" readonly value=300>
+                Subtotal <input type="number" readonly id="blackpink-total"></p>
+
+            <h3>Keshi - Hell & Back Tour</h3>
+            <p>March 15, 2023</p>
+            <p>Radio City Music Hall</p>
+            <p>Quantity <input type="number" id="keshi" min="0">
+            Price <input type="number" id="keshi-price" readonly value=100>
+            Subtotal <input type="number" readonly id="keshi-total"></p>
+
+            <h3>Total <input type="number" readonly id="total"></h3>
+
+            <div class="form-container">
+                <h2>Complete Your Purchase</h2>
+                <form action="#">
+                    <div class="form-row">
+                        First name <input type="text" name="First name">
+                    </div>
+                    <div class="form-row">
+                        Last name <input type="text" name="Last name">
+                    </div>
+                    <div class="form-row">
+                        Zip code <input type="number" name="Zip code">
+                    </div>
+                    <div class="form-row">
+                        Email address <input type="email" name="Email">
+                    </div>
+                    <div class="form-row">
+                        Shipping method
+                        <div class="options-col">
+                            <input name="Shipping method" type="radio" value="Electronic" checked>
+                            Electronic (free)
+                            <input name="Shipping method" type="radio" value="Mail">
+                            Mail ($5)
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        Credit card number <input type="number" name="Card">
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" value="Checkout">
+                    </div>
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
+            <script type="text/javascript" src="js/asg5cart.js"></script>
+        </div>
+    </body>
+
+    <footer>
+        <p>&copy; 2022 by Amory Gao.</p>
+    </footer>
+</html>
