@@ -1,0 +1,199 @@
+/* page styles */
+body {
+    margin: 4rem;
+    font-family: 'Playfair Display', serif;
+}
+/* end of page styles */
+
+/* container styles */
+.header {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    flex: 70%;
+    justify-content: center;
+}
+
+.side {
+    flex: 30%;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    background-color:whitesmoke;
+    padding: 1px;
+    margin: 5%;
+}
+/* end of container styles */
+
+/* navbar styles */
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    background-color: whitesmoke;
+}
+
+.nav-links li {
+    padding: 15px 50px 15px 0;
+    font-size: 110%;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color:dimgrey;
+}
+
+.nav-links li a:hover {
+    color: black;
+}
+/* end of navbar styles */
+
+/* assignment 5 navigation styles */
+.green {
+    font-weight:bold;
+    color:maroon;
+}
+/* end of assignment 5 navigation styles */
+
+/* header styles */
+.header {
+    text-align: center;
+    margin: 2.5% 0;
+}
+
+h1 {
+    font-size: 2.75rem;
+    font-weight: lighter;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: lighter;
+}
+/* end of header styles */
+
+/* text styles */
+h3 {
+    color:maroon;
+}
+
+h4, p {
+    color:dimgray;
+}
+
+p {
+    font-size: 17px;
+}
+
+a {
+    color:maroon;
+}
+
+a:hover {
+    color:crimson;
+}
+/* end of text styles */
+
+/* figure styles */
+figure img {
+    min-width:300px;
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+figcaption p {
+    text-align: center;
+    font-size: 0.90rem;
+}
+/* end of figure styles */
+
+/* image styles */
+img#asg2img1, img#asg2img2 {
+    width: 30%;
+    padding: 0 20px 20px;
+}
+
+img {
+    width: 30rem;
+    max-width: 90%;
+}
+/* end of image styles */
+
+/* button styles */
+button {
+    width: 7rem;
+    height: 3rem;
+    margin: 2rem 0;
+    border: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: white;
+    background-color: maroon;
+    display: block;
+}
+
+button:hover {
+    background-color: crimson;
+}
+/* end of button styles */
+
+/* form styles */
+.form-container {
+    max-width: 400px;
+    padding: 5% 10%;
+    display: block;
+    margin: auto;
+    background-color:whitesmoke;
+    margin-bottom: 2.5%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row label {
+    margin-right: 20px;
+}
+
+.form-row input, textarea {
+    margin-bottom: 1.25rem;
+}
+
+.form-row input[type="submit"] {
+    width: 100px;
+    height:40px;
+    border: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: white;
+    background-color: maroon;
+    display: block;
+    margin: auto;
+}
+/* end of form styles */
+
+/* media queries */
+@media (max-width: 700px) {
+    .row, .nav-links {
+        flex-direction:column;
+    }
+
+    .nav-links {
+        align-items: center;
+    }
+}
+/* end of media queries */
