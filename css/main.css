@@ -200,4 +200,57 @@ a:hover{
     color: #322525;
 }
 
+/* final project shopping cart */
+.online-store {
+    background-image: url('../images/2.jpg');
+    background-size:contain;
+}
 
+.products {
+    background-color: #f1f1f1e8;
+    width: 80%;
+    /* opacity: 95%; */
+    display: block;
+    margin: 100px auto;
+    font-size: 2vh;
+    padding: 2rem;
+    /* padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 6vh;
+    padding-bottom: 6vh; */
+}
+
+.form-container {
+    max-width: 700px;
+    padding: 5% 10%;
+    display: block;
+    margin: auto;
+    background-color:white;
+    margin-bottom: 2.5%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row label {
+    margin-right: 20px;
+}
+
+.form-row input, textarea {
+    margin-bottom: 1.25rem;
+}
+
+input[type="submit"] {
+    padding: 2vh 2vw;
+    background-color: #f8ede3;
+    border-radius: 1vh;
+}
+
+h1.store {
+    letter-spacing: 1vw;
+    color:white;
+    text-align: center;
+    padding-top: 10%;
+}

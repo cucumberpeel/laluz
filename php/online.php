@@ -16,12 +16,14 @@
         </div>
         <div id="asg7-result">
             <?php
-                $uname = $_POST['Name'];
+                $fname = $_POST['First name'];
+                $lname = $_POST['Last name'];
+                $zip = $_POST['Zip code'];
+                $phone = $_POST['Phone number'];
                 $email = $_POST['Email'];
-                $flavor = $_POST['Flavor'];
                 $quantity = floatval($_POST['Quantity']);
 
-                print("<h2>Thanks for your purchase, $uname</h2>");
+                print("<h2>Thanks for your purchase, $fname</h2>");
 
                 foreach($_POST as $name => $value) {
                     print("<p>$name: $value</p>");

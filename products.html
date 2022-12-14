@@ -32,27 +32,36 @@
               </ul>
             </div>
         </nav>
-        <div class="products">
-            <img class="bgimg" src="images/bg.jpg" />
-            <h3>BLACKPINK - BORN PINK Tour</h3>
-            <p>November 15, 2022</p>
-            <p>Prudential Center</p>
-            <p>Quantity <input type="number" id="blackpink" min="0">
-                Price <input type="number" id="blackpink-price" readonly value=300>
-                Subtotal <input type="number" readonly id="blackpink-total"></p>
 
-            <h3>Keshi - Hell & Back Tour</h3>
-            <p>March 15, 2023</p>
-            <p>Radio City Music Hall</p>
-            <p>Quantity <input type="number" id="keshi" min="0">
-            Price <input type="number" id="keshi-price" readonly value=100>
-            Subtotal <input type="number" readonly id="keshi-total"></p>
+        <div class="online-store">
+            <h1 class="store" style="font-size: 60px"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-custom-class="custom-tooltip">
+                Order Online
+            </h1>
 
-            <h3>Total <input type="number" readonly id="total"></h3>
+            <div class="products">
+                <h3>Chocolate Chips (2 lbs)</h3>
+                <p>Description 1</p>
+                <img src="images/chips.jpg" width="200px" class="product-imgs" />
+                <p>Quantity <input type="number" id="product1" min="0">
+                    Price <input type="number" id="product1-price" readonly value=10>
+                    Subtotal <input type="number" readonly id="product1-total"></p>
+    
+                <h3>Chocolate Bars (Pack of 5)</h3>
+                <p>Description 2</p>
+                <img src="images/bar.webp" width="200px" class="product-imgs" />
+                <p>Quantity <input type="number" id="product2" min="0">
+                Price <input type="number" id="product2-price" readonly value=15>
+                Subtotal <input type="number" readonly id="product2-total"></p>
+    
+                <h3>Total <input type="number" readonly id="total"></h3>
+            </div>
 
             <div class="form-container">
                 <h2>Complete Your Purchase</h2>
-                <form action="#">
+                <form action="php/products.php" method="post">
                     <div class="form-row">
                         First name <input type="text" name="First name">
                     </div>
@@ -63,34 +72,40 @@
                         Zip code <input type="number" name="Zip code">
                     </div>
                     <div class="form-row">
+                        Phone number <input type="number" name="Phone number">
+                    </div>
+                    <div class="form-row">
                         Email address <input type="email" name="Email">
                     </div>
                     <div class="form-row">
                         Shipping method
                         <div class="options-col">
-                            <input name="Shipping method" type="radio" value="Electronic" checked>
-                            Electronic (free)
-                            <input name="Shipping method" type="radio" value="Mail">
-                            Mail ($5)
+                            <input name="Shipping method" type="radio" value="Standard" checked>
+                            Standard (free)
+                            <input name="Shipping method" type="radio" value="Express">
+                            Express ($5)
                         </div>
                     </div>
                     <div class="form-row">
                         Credit card number <input type="number" name="Card">
                     </div>
+                    <!-- <div class="form-row">
+                        Subtotal <input type="number" readonly id="total">
+                    </div> -->
                     <div class="form-row">
                         <input type="submit" value="Checkout">
                     </div>
                     <input type="reset" value="Reset">
                 </form>
             </div>
-            <script type="text/javascript" src="js/asg5cart.js"></script>
+            <script type="text/javascript" src="js/products.js"></script>
             <div class="menu">
                 <a 
                 data-bs-toggle="tooltip"
                 data-bs-placement="bottom"
                 data-bs-custom-class="custom-tooltip"
                 href="products.html">Order Online</a>
-                <a \
+                <a 
                 data-bs-toggle="tooltip"
                 data-bs-placement="bottom"
                 data-bs-custom-class="custom-tooltip"

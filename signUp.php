@@ -9,8 +9,10 @@
         <div class="header">
             <h1>Sign Up Information</h1>
         </div>
-        <div >
+        <div>
             <?php
+                chmod("signUp.php", 0755);
+                chmod("users.txt", 0777);
                 $uname = $_POST['username'];
                 $email = $_POST['email'];
                 $password = $_POST['password'];
