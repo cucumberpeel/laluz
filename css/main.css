@@ -203,7 +203,7 @@ a:hover{
 /* final project shopping cart */
 .online-store {
     background-image: url('../images/2.jpg');
-    background-size:contain;
+    background-size:cover;
 }
 
 .products {
@@ -253,4 +253,19 @@ h1.store {
     color:white;
     text-align: center;
     padding-top: 10%;
+}
+.subTitle{
+    letter-spacing: 1vw;
+    color:#e9d1d1;
+    text-align: center;
+    padding-top: 10%;
+}
+.textBox{
+    background-color: #f1f1f1e8;
+    width: 26%;
+    /* opacity: 95%; */
+    display: block;
+    margin: 100px auto;
+    font-size: 2vh;
+    padding: 2rem;
 }
