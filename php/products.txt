@@ -1,1 +1,20 @@
-chocolate
+
+productName: Chocolate Chips
+description: 2 lbs/bag
+price: $10
+
+productName: Milk Chocolate Bars
+description: Pack of 5
+price: $15
+
+productName: Truffle
+description: 6/bag
+price: $10
+
+productName: Bonbon
+description: 6/bag
+price: $15
+
+productName: Nama
+description: 18/box
+price: $15

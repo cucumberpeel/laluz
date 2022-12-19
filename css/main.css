@@ -100,8 +100,9 @@ body {
 
 /* contact us */
 
-.aboutus_container {
+.contact_container {
   text-align: center;
+  background-image: url("../images/bg.jpg");
 }
 
 .bgimg {
@@ -109,7 +110,7 @@ body {
   height: auto;
 }
 
-.ourstory {
+.contact_title {
   color: rgb(255, 248, 239);
   position: absolute;
   left: 50%;
@@ -172,22 +173,6 @@ fieldset {
   border-radius: 1vh;
 }
 
-#button {
-  margin: 0;
-  margin-top: 3vh;
-  position: relative;
-  left: 5vw;
-  text-align: center;
-}
-
-footer {
-  color: rgb(255, 248, 239);
-  font-size: 2vh;
-  left: 25%;
-  right: 25%;
-  top: 95%;
-  position: absolute;
-}
 
 a {
   color: rgb(255, 248, 239);
@@ -195,6 +180,36 @@ a {
 
 a:hover {
   color: #322525;
+}
+
+/* about us */
+/* about us */
+
+.aboutus_container{
+  text-align: center;
+}
+
+.bgimg{
+  width: 100vw;
+  height: auto;
+}
+
+.ourstory{
+  color: rgb(255, 248, 239);
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 1vw;
+}
+
+.story {
+  color: rgb(255, 248, 239);
+  font-size: 3vh;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  position: absolute;
 }
 
 /* final project shopping cart */
