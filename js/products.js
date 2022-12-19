@@ -3,14 +3,8 @@ let p2Obj = document.getElementById('product2');
 p1Obj.addEventListener("change", total);
 p2Obj.addEventListener("change", total);
 
-// prevent default
-// shipping not adding to total
-// reset
 let form = document.forms[0];
 form.addEventListener("submit", validate);
-// form.addEventListener("submit", validate(e) {
-//     e.preventDefault()
-// });
 
 function total() {
     var p1_items = document.getElementById('product1').value;
@@ -23,8 +17,23 @@ function total() {
     var p2_total = p2_items * p2_price;
     document.getElementById('product2-total').value = p2_total;
 
-    if (p1_total > 0 || p2_total > 0) {
-        document.getElementById('total').value = p1_total + p2_total;
+    var p3_items = document.getElementById('product3').value;
+    var p3_price = document.getElementById('product3-price').value;
+    var p3_total = p3_items * p3_price;
+    document.getElementById('product3-total').value = p3_total;
+
+    var p4_items = document.getElementById('product4').value;
+    var p4_price = document.getElementById('product4-price').value;
+    var p4_total = p4_items * p4_price;
+    document.getElementById('product4-total').value = p4_total;
+
+    var p5_items = document.getElementById('product5').value;
+    var p5_price = document.getElementById('product5-price').value;
+    var p5_total = p5_items * p5_price;
+    document.getElementById('product5-total').value = p5_total;
+
+    if (p1_total || p2_total || p3_total || p4_total || p5_total) {
+        document.getElementById('total').value = p1_total + p2_total + p3_total + p4_total + p5_total;
     }
     else {
         document.getElementById('total').value = 0;
@@ -33,9 +42,6 @@ function total() {
 
 function validate(e) {
     let len = form.elements.length;
-    // let text = "<h1>Thank you for your purchase! </h1>";
-    // let total = "?";
-    // let radio_flag = false;
     for (let i = 0; i < len - 2; i++) {
         // ensure no empty fields
         if (form.elements[i].value == "" || form.elements[i].value == null) {
@@ -81,25 +87,6 @@ function validate(e) {
             e.preventDefault();
             return;
         }
-        // else if (i == 5 && form.elements[i].checked == true) {
-        //     text += form.elements[i].name;
-        //     text += ": ";
-        //     text += form.elements[i].value;
-        //     text += "<p>";
-        //     radio_flag = true;
-        // }
-        // else if (i == 5 && form.elements[i].checked == false) {
-        //     continue;
-        // }
-        // else if (i == 6 && radio_flag) {
-        //     continue;
-        // }
-        // else if (i == 6 && form.elements[i].checked == true) {
-        //     text += form.elements[i].name;
-        //     text += ": ";
-        //     text += form.elements[i].value;
-        //     text += "<p>";
-        // }
         else if (i == 7 && form.elements[i].value.length != 16) {
             alert("Invalid credit card number. Please try again.");
             form.elements[i].focus();
@@ -108,21 +95,5 @@ function validate(e) {
             e.preventDefault();
             return;
         }
-        // else if (i == 7) {
-        //     text += form.elements[i].name;
-        //     text += ": ";
-        //     text += "XXXX XXXX XXXX " + form.elements[i].value.slice(12, 16);
-        //     text += "<p>";
-        // }
-        // else {
-        //     text += form.elements[i].name;
-        //     text += ": ";
-        //     text += form.elements[i].value;
-        //     text += "<p>";
-        // }
     }
-    // show receipt
-    // document.open();
-    // document.write(text);
-    // document.write("<h2>Total: " + total + "</h2>");
 }

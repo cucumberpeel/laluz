@@ -43,6 +43,7 @@
 
             <div class="products">
             <?php
+                chmod("users.txt", 0777);
                 $fname = $_POST['First name'];
                 $lname = $_POST['Last name'];
                 $zip = $_POST['Zip code'];
@@ -50,6 +51,9 @@
                 $email = $_POST['Email'];
                 $ship = $_POST['Shipping method'];
                 $card = $_POST['Card'];
+
+                $file = fopen("users.txt", "a");
+                // $line= $uname.":".$email. " phone number is: ".$phoneNum.  " password is: " .$password. "\n";
 
                 print("<h2>Thanks for your purchase!</h2>");
                 foreach($_POST as $name => $value) {
@@ -60,7 +64,10 @@
                     else {
                         print("<p>$name: $value</p>");
                     }
+                    $line = $name.":".$value."\n";
+                    fwrite($filea, $line);
                 }
+                fclose($filea);
             ?>
             </div>
 
